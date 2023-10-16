@@ -6,8 +6,8 @@ int vokal(char *bulan) {
     int hitung = 0;
     for (int i = 0; bulan[i] != '\0'; i++) {
         char c = bulan[i];
-        if (c == 'a' || c == 'i' || c == 'u' || c == 'e' || c == 'o' ||
-            c == 'A' || c == 'I' || c == 'U' || c == 'E' || c == 'O') {
+        if ((c == 'a' || c == 'i' || c == 'u' || c == 'e' || c == 'o') ||
+            (c == 'A' || c == 'I' || c == 'U' || c == 'E' || c == 'O')) {
             hitung++;
         }
     }
